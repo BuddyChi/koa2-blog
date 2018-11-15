@@ -54,6 +54,6 @@ app.use(require('./routers/posts.js').routes())
 app.use(require('./routers/signout.js').routes())
 
 
-app.listen(config.port)
+app.listen(config.port,'0.0.0.0')
 
 console.log(`listening on port ${config.port}`)

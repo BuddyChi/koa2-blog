@@ -4,6 +4,7 @@ const checkNotLogin = require('../middlewares/check.js').checkNotLogin
 const checkLogin = require('../middlewares/check.js').checkLogin
 
 exports.getSignin = async ctx => {
+    console.log('this is signin')
     await checkNotLogin(ctx)
     await ctx.render('signin', {
         session: ctx.session,
